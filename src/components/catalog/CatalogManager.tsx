@@ -102,13 +102,16 @@ const CatalogManager = () => {
                     <Plus className="w-4 h-4 mr-2" />
                     Adicionar Produto
                   </Button>
+                  <Button 
+                    variant="outline"
+                    onClick={() => window.open('/catalogo/demo', '_blank')}
+                  >
+                    <Eye className="w-4 h-4 mr-2" />
+                    Ver Vitrine Pública
+                  </Button>
                   <Button variant="outline">
                     <Share2 className="w-4 h-4 mr-2" />
                     Compartilhar
-                  </Button>
-                  <Button variant="outline">
-                    <Eye className="w-4 h-4 mr-2" />
-                    Preview Mobile
                   </Button>
                 </div>
               </div>
