@@ -102,13 +102,23 @@ const CatalogManager = () => {
                     <Plus className="w-4 h-4 mr-2" />
                     Adicionar Produto
                   </Button>
-                  <Button 
-                    variant="outline"
-                    onClick={() => window.open('/catalogo/demo', '_blank')}
-                  >
-                    <Eye className="w-4 h-4 mr-2" />
-                    Ver Vitrine Pública
-                  </Button>
+                  <div className="flex gap-2">
+                    <Button 
+                      variant="outline" 
+                      onClick={() => window.open('/catalogo/demo', '_blank')}
+                      className="flex items-center gap-2"
+                    >
+                      <Eye className="w-4 h-4" />
+                      Vitrine Simples
+                    </Button>
+                    <Button 
+                      onClick={() => window.open('/loja/moderna', '_blank')}
+                      className="flex items-center gap-2"
+                    >
+                      <ShoppingCart className="w-4 h-4" />
+                      Loja Moderna
+                    </Button>
+                  </div>
                   <Button variant="outline">
                     <Share2 className="w-4 h-4 mr-2" />
                     Compartilhar
